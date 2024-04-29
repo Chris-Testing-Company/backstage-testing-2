@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-testing
+  annotations:
+    github.com/project-slug: Chris-Testing-Company/backstage-testing
+spec:
+  type: other
+  lifecycle: unknown
+  owner: rnd_sre
