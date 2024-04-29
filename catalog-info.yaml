@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: backstage-testing
+  name: backstage-testing-2
   annotations:
     github.com/project-slug: Chris-Testing-Company/backstage-testing
 spec:
