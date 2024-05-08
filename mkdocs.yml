@@ -2,9 +2,10 @@ site_name: backstage-testing-2-docs
 site_description: An informative description
 plugins:
   - techdocs-core
+  - kroki
 nav:
   - Getting Started: index.md
   - iframe Example: examples/iframe.md
   - lists Example: examples/lists.md
   - mermaid Example: examples/mermaid.md
-  - plugins Doc: plugins/index.md
+  - plugins Doc: plugins/README.md
