@@ -5,6 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: Chris-Testing-Company/backstage-testing
     backstage.io/techdocs-ref: dir:.
+    jira/project-key: AWN
 spec:
   type: other
   lifecycle: unknown
