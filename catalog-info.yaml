@@ -9,4 +9,4 @@ metadata:
 spec:
   type: other
   lifecycle: unknown
-  owner: rnd_sre
+  owner: site-reliability-engineering
