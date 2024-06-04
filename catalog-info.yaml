@@ -10,3 +10,16 @@ spec:
   type: other
   lifecycle: unknown
   owner: site-reliability-engineering
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: rtkwlf-backstage-templates
+  title: Backstage Templates
+  description: Templates entities for testing
+  annotations:
+    github.com/project-slug: 'rtkwlf/backstage-entities'
+spec:
+  type: url
+  targets:
+    - https://github.com/Chris-Testing-Company/backstage-testing-2/blob/main/testing-template.yaml
