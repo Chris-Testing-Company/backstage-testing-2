@@ -14,8 +14,6 @@ spec:
   # these are the steps which are rendered in the frontend with the form input
   parameters:
     - title: Choose a location
-      required:
-        - repoUrl
       properties:
         repoUrl:
           title: Repository Location
