@@ -113,6 +113,7 @@ spec:
         title: Add catalog-info.yaml to repo
         description: This PR is created by Backstage template entity. It is going to insert a catalog-info.yaml to repo for use in Backstage.
         draft: true
+        token: ${{ secrets.USER_OAUTH_TOKEN }}
   # some outputs which are saved along with the job for use in the frontend
   output:
     links:
