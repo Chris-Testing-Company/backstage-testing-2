@@ -14,15 +14,6 @@ spec:
   # these are the steps which are rendered in the frontend with the form input
   parameters:
     - title: Fill in Core information
-      required:
-        - github_org
-        - repo
-        - title
-        - description
-        - distributed
-        - github_team
-        - system
-
       properties:
         github_org:
           title: GitHub Organization
@@ -78,8 +69,6 @@ spec:
             defaultKind: System  
         
     - title: Fill in Plugin related information
-      required:
-        - jira_project_key
       properties:
         jira_project_key: 
           title: Jira Project Key
@@ -88,6 +77,10 @@ spec:
 
   # here's the steps that are executed in series in the scaffolder backend
   steps:
+    - action: debug:log
+      name: Debug Log Line
+      input:
+        message: repo_url https://github.com/${{ parameters.github_org }}/${{ parameters.repo }}
     - action: fetch:template
       id: fetch-template
       name: Fetch template
@@ -98,6 +91,14 @@ spec:
           repo: ${{ parameters.repo }}
         # cookiecutterCompat: true
         templateFileExtension: yaml
+    - action: publish:github:pull-request
+      name: Create Github Pull Request
+      input:
+        repoUrl: 'github.com?repo=backstage-testing-2&owner=Chris-Testing-Company'
+        branchName: add-catalog-info-file
+        title: Add catalog-info.yaml to repo
+        description: This PR is created by Backstage template entity. It is going to insert a catalog-info.yaml to repo for use in Backstage.
+        draft: true
   # some outputs which are saved along with the job for use in the frontend
   output:
     links:
