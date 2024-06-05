@@ -4,7 +4,7 @@ kind: Template
 metadata:
   name: catalog-info-generator-testing-2
   title: Catalog Info Generator Testing 2
-  description: Cool - Create a bsice component similar described in https://arcticwolf.atlassian.net/wiki/spaces/PD/pages/4071326158/How+to+create+a+Backstage+catalog-info.yaml+file#Rollout-Instructions-for-SRE-Team
+  description: Cold - Create a bsice component similar described in https://arcticwolf.atlassian.net/wiki/spaces/PD/pages/4071326158/How+to+create+a+Backstage+catalog-info.yaml+file#Rollout-Instructions-for-SRE-Team
   tags:
     - recommended
 spec:
